@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #000;
+}
+.pacman{
+    margin: 80px;
+    width: 100px;
+    border-top: 100px solid #ff0;
+    border-left: 100px solid #ff0;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid #ff0;
+    border-radius: 50%;
+    position: relative;
+
+}
+.pacman::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+    top: -70px;
+    left: -10px;
+}
